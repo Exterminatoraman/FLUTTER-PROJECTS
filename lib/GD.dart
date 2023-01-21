@@ -137,18 +137,7 @@ class _jwellypageState extends State<jwellypage> {
               )
             ],
           ),
-          /*     Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0,10,0,0),
-                child: Text('GST : 3%',
-                    style:TextStyle(
-                      fontSize: 20,
-                    )
-                ),
-              ),
-            ],
-          ),*/
+         
           SizedBox(
             width: 100,
             height: 30,
@@ -171,7 +160,7 @@ class _jwellypageState extends State<jwellypage> {
                 onPressed: (){
                   setState((){
                     if(second==true){
-                      double sum=double.parse(weight.text)*(int.parse(rate.text)*0.76)+(int.parse(making.text)*double.parse(weight.text));
+                      double sum=double.parse(weight.text)*(int.parse(rate.text)*0.75)+(int.parse(making.text)*double.parse(weight.text));
                       double gst=sum+(0.03*sum);
                       //    price=sum.toString();
                       //pgst=gst.toString();
@@ -200,11 +189,7 @@ class _jwellypageState extends State<jwellypage> {
               )
             ],
           ),
-          /*   Text('Rs.$price',
-            style: TextStyle(
-              fontSize: 30,
-            ),
-          ),*/
+          
           Text('Rs.$pgst',
             style: TextStyle(
               fontSize: 30,
