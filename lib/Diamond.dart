@@ -171,18 +171,7 @@ class _diamondpageState extends State<diamondpage> {
               )
             ],
           ),
-          /*     Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0,10,0,0),
-                child: Text('GST : 3%',
-                    style:TextStyle(
-                      fontSize: 20,
-                    )
-                ),
-              ),
-            ],
-          ),*/
+          
           SizedBox(
             width: 100,
             height: 30,
@@ -217,7 +206,7 @@ class _diamondpageState extends State<diamondpage> {
                       }
                     }
                     else if(third=true){
-                      double sum=double.parse(weight.text)*(int.parse(rate.text)*0.76)+(double.parse(carat.text)*int.parse(drate.text))+(int.parse(making.text)*double.parse(weight.text));
+                      double sum=double.parse(weight.text)*(int.parse(rate.text)*0.75)+(double.parse(carat.text)*int.parse(drate.text))+(int.parse(making.text)*double.parse(weight.text));
                       double gst=sum+(0.03*sum);
                       //   price=sum.toString();
                       // pgst=gst.toString();
@@ -234,12 +223,7 @@ class _diamondpageState extends State<diamondpage> {
               )
             ],
           ),
-          /*   Text('Rs.$price',
-            style: TextStyle(
-              fontSize: 30,
-            ),
-          ),*/
-
+          
           Text('Rs.$pgst',
             style: TextStyle(
               fontSize: 30,
