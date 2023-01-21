@@ -82,49 +82,5 @@ class Gold extends StatelessWidget {
 
   }
 }
-/*class diamond extends StatelessWidget {
-  const diamond({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(child: Text('Jwelly')),
-        backgroundColor: Colors.pink[200],
-      ),
-      body: Column(
-        children: [
-          Center(
-            child: TextButton(
-              child: Container(
-                color: Colors.blue,
-                child: Text('Diamond'),
-              ),
-              onPressed: (){
-                Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const diamondmain()),
-                );
-              },
-            ),
-          ),
-          Center(
-            child: TextButton(
-              child: Container(
-                color: Colors.blue,
-                child: Text('Diamond'),
-              ),
-              onPressed: (){
-                Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const diamondmain()),
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}*/
-
 
 
